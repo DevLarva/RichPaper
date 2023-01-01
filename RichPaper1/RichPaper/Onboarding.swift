@@ -42,6 +42,6 @@ struct Onboarding: View {
             
             
         }
-        .tabViewStyle(PageTabViewStyle())
+        .tabViewStyle(.page)
     }
 }
