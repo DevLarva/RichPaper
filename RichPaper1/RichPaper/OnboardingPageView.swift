@@ -7,6 +7,7 @@
 
 import SwiftUI
 //MARK: - 온보딩뷰에 대한 페이지뷰
+
 struct PageView: View {
     let title: String
     let subtitle: String
@@ -18,6 +19,7 @@ struct PageView: View {
     var body: some View {
         VStack(spacing: 20) {
             VStack {
+                
                 Image(imageName)
                     .resizable()
                     .scaledToFit()
@@ -29,7 +31,7 @@ struct PageView: View {
                     .font(.title2)
                     .bold()
                     .padding()
-                
+
                 
                 Text(subtitle)
                     .font(.headline)
@@ -52,8 +54,6 @@ struct PageView: View {
                         .cornerRadius(20)
                         .frame(width: 200, height: 50)
                         .background(Color(red: 60 / 255, green: 179 / 255, blue: 113 / 255))
-                    
-                  
                 })
             }
                

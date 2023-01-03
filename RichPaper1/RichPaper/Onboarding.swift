@@ -11,28 +11,26 @@ struct Onboarding: View {
     @Binding var ShowOnboarding: Bool
     var body: some View {
         
+        
         TabView {
-            PageView(title: String(localized:"How well do you know Korean?",comment: ""),
-                     subtitle: String(localized: "Until now, it was not easy to learn Korean. But what about with GaNaDa?",comment: ""),
-                     imageName: "king",
+            PageView(title: String(localized:"Are you good at planning for success?",comment: ""),
+                     subtitle: String(localized: "Don't you fail to plan every time?",comment: ""),
+                     imageName: "plan",
                      showsDismissButton: false,
                      ShowOnboarding: $ShowOnboarding
             )
             
-            PageView(title: String(localized:"learnig",comment: ""),
-                     subtitle: String(localized:"Learn a variety of Korean through a simple game",comment: ""),
-                     imageName: "south-korea",
-                     
+            PageView(title: String(localized:"Brian Tracy's",comment: ""),
+                      subtitle: String(localized:"This app is Brian Tracy's suggestion to achieve his goal.",comment: ""),
+                     imageName: "anounce",
                      showsDismissButton: false,
                      ShowOnboarding: $ShowOnboarding
                      
             )
             
-            
-            PageView(title: String(localized:"Learning by Repetition",comment: ""),
-                     subtitle:  String(localized:"After completing the study, write it down in a notepad, and repeat the study!",comment: ""),
-                     imageName: "student",
-                     
+            PageView(title: String(localized:"Set your own goals and achieve them!",comment: ""),
+                     subtitle:  String(localized:"Looking forward to seeing yourself change in a month, six months, or a year!",comment: ""),
+                     imageName: "succes",
                      showsDismissButton: true,
                      ShowOnboarding: $ShowOnboarding
                      
