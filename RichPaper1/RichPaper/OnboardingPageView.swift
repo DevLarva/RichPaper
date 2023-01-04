@@ -18,7 +18,35 @@ struct PageView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Rich Paper")
+                .font(.largeTitle.bold())
+                .foregroundColor(.black)
             VStack {
+                HStack(alignment: .center) {
+                    
+                    Image(systemName: "clock")
+                        .foregroundColor(.accentColor)
+                        .padding()
+                        .font(.title)
+                        .accessibility(hidden: true)
+                    
+                    Text("asdasdasdas")
+                        .font(.headline)
+                        .fixedSize(horizontal: false, vertical: true)
+                             }
+                HStack(alignment: .center) {
+                    
+                    Image(systemName: "clock")
+                        .foregroundColor(.accentColor)
+                        .padding()
+                        .font(.title)
+                        .accessibility(hidden: true)
+                    
+                    Text("asdasdasdas")
+                        .font(.headline)
+                        .fixedSize(horizontal: false, vertical: true)
+                             }
+                
                 
                 Image(imageName)
                     .resizable()
