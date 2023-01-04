@@ -13,14 +13,21 @@ struct Onboarding: View {
         ZStack {
             Color(.systemGroupedBackground)
                 .ignoresSafeArea(.all)
-            VStack {
-                Text("Rich Paper")
+            
+            
+            
+            
+            VStack(alignment: .center) {
+                Text("Rich Paper")          //제일 위 제목
                     .font(.largeTitle.bold())
                     .foregroundColor(.black)
-                VStack(spacing: 30) {
-                    HStack(alignment: .center) {
+                Spacer()
+                
+                
+                VStack(alignment: .leading, spacing: 30) {                   //VStack으로 나열
+                    HStack(alignment: .center) {           // 이미지랑 텍스트 같이 나열 1
                         
-                        Image(systemName: "music.mic")
+                        Image(systemName: "pencil.and.outline")
                             .foregroundColor(.accentColor)
                             .padding()
                             .font(.title)
@@ -28,10 +35,10 @@ struct Onboarding: View {
                         
                         Text("Take out your paper right now and write down your goals in the time you want!")
                             .font(.headline)
-                            .fixedSize(horizontal: false, vertical: true)
+                        
                     }
                     
-                    HStack(alignment: .center) {
+                    HStack(alignment: .center, spacing: 0) {            //2
                         
                         Image(systemName: "calendar")
                             .foregroundColor(.accentColor)
@@ -39,14 +46,14 @@ struct Onboarding: View {
                             .font(.title)
                             .accessibility(hidden: true)
                         
-                        Text("Set your own plans for a month, six months, or a year, and find yourself changing.")
+                        Text("Set your own plans for Period and see how you change.")
                             .font(.headline)
-                            .fixedSize(horizontal: false, vertical: true)
+                        
                         
                     }
-                    HStack(alignment: .center) {
+                    HStack(alignment: .center) {                //3
                         
-                        Image(systemName: "calendar")
+                        Image(systemName: "person.fill.questionmark")
                             .foregroundColor(.accentColor)
                             .padding()
                             .font(.title)
@@ -54,12 +61,12 @@ struct Onboarding: View {
                         
                         Text("If you could achieve your desired goal in 24 hours, which one would you choose?")
                             .font(.headline)
-                            .fixedSize(horizontal: false, vertical: true)
+                        
                         
                     }
-                    HStack(alignment: .center) {
+                    HStack(alignment: .center) {                    //4
                         
-                        Image(systemName: "calendar")
+                        Image(systemName: "figure.run")
                             .foregroundColor(.accentColor)
                             .padding()
                             .font(.title)
@@ -67,15 +74,16 @@ struct Onboarding: View {
                         
                         Text("If you want to find yourself working every day toward your goal, start now.")
                             .font(.headline)
-                            .fixedSize(horizontal: false, vertical: true)
+                        
                         
                     }
-                
+                    
                 }
-                
+                Spacer()
+                Spacer()
             }
         }
-   
     }
 }
+
 

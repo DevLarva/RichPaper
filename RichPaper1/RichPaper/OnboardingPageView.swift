@@ -34,18 +34,7 @@ struct PageView: View {
                         .font(.headline)
                         .fixedSize(horizontal: false, vertical: true)
                              }
-                HStack(alignment: .center) {
-                    
-                    Image(systemName: "clock")
-                        .foregroundColor(.accentColor)
-                        .padding()
-                        .font(.title)
-                        .accessibility(hidden: true)
-                    
-                    Text("asdasdasdas")
-                        .font(.headline)
-                        .fixedSize(horizontal: false, vertical: true)
-                             }
+                
                 
                 
                 Image(imageName)
