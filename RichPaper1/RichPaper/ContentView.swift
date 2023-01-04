@@ -12,7 +12,7 @@ struct ContentView: View {
     @AppStorage("_Firstrun") var Firstrun: Bool = true
     var body: some View {
         VStack {
-            Onboarding(ShowOnboarding: $Firstrun)
+            Onboarding(ShowOnboarding: $Firstrun, showsDismissButton: true)
         }
     }
 }

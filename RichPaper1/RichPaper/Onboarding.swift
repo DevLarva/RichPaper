@@ -9,6 +9,9 @@ import SwiftUI
 
 struct Onboarding: View {
     @Binding var ShowOnboarding: Bool
+    let showsDismissButton: Bool
+    @State private var isAnimating: Bool = false
+    
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -24,7 +27,7 @@ struct Onboarding: View {
                 Spacer()
                 
                 
-                VStack(alignment: .leading, spacing: 30) {                   //VStack으로 나열
+                VStack(alignment: .leading, spacing: 20) {                   //VStack으로 나열
                     HStack(alignment: .center) {           // 이미지랑 텍스트 같이 나열 1
                         
                         Image(systemName: "pencil.and.outline")
@@ -80,8 +83,25 @@ struct Onboarding: View {
                     
                 }
                 Spacer()
+                if showsDismissButton {
+                    // 온보딩이 끝나고 메인 페이지로 넘어가기 위한 버튼
+                    // ShowOnboarding 값을 false로 바꾸기 때문에 최초 실행 이후에는 onboardingview를 보여주지 않는다.
+                    
+                        Button(action: {
+                            ShowOnboarding.toggle()
+                        }, label: {
+                            Text("Get Start")
+                                .foregroundColor(.white)
+                                .bold()
+                                .cornerRadius(10)
+                                .frame(width: 200, height: 50)
+                                .background(Color(red: 60 / 255, green: 179 / 255, blue: 113 / 255))
+                        })
+                    }
+                Spacer()
                 Spacer()
             }
+           
         }
     }
 }
