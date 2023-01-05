@@ -7,30 +7,41 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var period = ["One Month", "Six Month ", "One Year"]
+    
+    
     @State var selectedPeriod = ""
     
     var body: some View {
-        VStack {
-            Text("Please select a goal setting period")
-            
-                .font(.title2)
-             
-            Picker("Please select a goal setting period", selection: $selectedPeriod) {
+        NavigationView {
+            VStack {
+                Text("Please select a goal setting period and press the button below.")
+                    .bold()
+                    .font(.title3)
+                    .padding()
                 
-                ForEach(period, id: \.self) {
-                    Text($0)
+                Picker("", selection: $selectedPeriod) {
+                    
+                    ForEach(period, id: \.self) {
+                        Text($0)
+                        
+                    }
                 }
+                .pickerStyle(.segmented)
+                .background(.secondary)
+                .cornerRadius(10)
+                .padding()
+                
+                Text("you selected \(selectedPeriod)")
+                
             }
-            .pickerStyle(.segmented)
-            .background(.gray)
-            .cornerRadius(10)
-            .padding()
-            Text("You selected: \(selectedPeriod)")
-            
+            .navigationBarTitle("Goal Setting Period")
         }
+        
     }
+    
     
 }
 

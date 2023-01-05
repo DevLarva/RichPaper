@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC37E07929669936001E9F69 /* OneMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37E07829669936001E9F69 /* OneMonthView.swift */; };
 		ACA524262960140200D76958 /* RichPaper2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524252960140200D76958 /* RichPaper2App.swift */; };
 		ACA524282960140200D76958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524272960140200D76958 /* ContentView.swift */; };
 		ACA5242A2960140300D76958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA524292960140300D76958 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC37E07829669936001E9F69 /* OneMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMonthView.swift; sourceTree = "<group>"; };
 		ACA524222960140200D76958 /* RichPaper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPaper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA524252960140200D76958 /* RichPaper2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichPaper2App.swift; sourceTree = "<group>"; };
 		ACA524272960140200D76958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				ACA524252960140200D76958 /* RichPaper2App.swift */,
 				ACA524272960140200D76958 /* ContentView.swift */,
 				ACA52433296019DF00D76958 /* GoalPage.swift */,
+				AC37E07829669936001E9F69 /* OneMonthView.swift */,
 				ACA524292960140300D76958 /* Assets.xcassets */,
 				ACA5242B2960140300D76958 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC37E07929669936001E9F69 /* OneMonthView.swift in Sources */,
 				ACA524282960140200D76958 /* ContentView.swift in Sources */,
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
 				ACA52434296019DF00D76958 /* GoalPage.swift in Sources */,
