@@ -36,13 +36,13 @@ struct ContentView: View {
                         .buttonStyle(.borderedProminent)
                 
                 NavigationLink {
-                    OneMonthView()
+                    SixMonthView()
                         } label: {
                             Text("6 month")
                         }
                         .buttonStyle(.borderedProminent)
                 NavigationLink {
-                    OneMonthView()
+                    OneYearView()
                         } label: {
                             Text("12 month")
                         }

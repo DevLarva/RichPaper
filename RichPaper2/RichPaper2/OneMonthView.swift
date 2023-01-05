@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct OneMonthView: View {
-    @State private var showingAddScreen = true
-    @State var selectedPeriod = ""
+    @State private var showingAddScreen = false
+    
     
     var body: some View {
         List {
@@ -25,6 +25,9 @@ struct OneMonthView: View {
                        
                    } label: {
                        Label("Add Word", systemImage: "plus")
+                   }.sheet(isPresented: self.$showingAddScreen)
+                   {
+                       OneMonthView()
                    }
                }
            }
