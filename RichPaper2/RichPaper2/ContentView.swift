@@ -7,44 +7,53 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
-    var period = ["One Month", "Six Month ", "One Year"]
-    
-    
-    @State var selectedPeriod = ""
-    
+    @State var showDetails = false
+    var period = ["One Month", "Six Month ", "A Year"]
+
     var body: some View {
+      
         NavigationView {
-            VStack {
-                Text("Please select a goal setting period and press the button below.")
+        
+            
+            VStack(spacing: 20) {
+                Image("plan")
+                    .resizable()
+                    .scaledToFit()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100.0, height: 100.0)
+                    .padding()
+                Text("Please set a period of time when you want to set a goal")
                     .bold()
-                    .font(.title3)
+                    .font(.title2)
                     .padding()
                 
-                Picker("", selection: $selectedPeriod) {
-                    
-                    ForEach(period, id: \.self) {
-                        Text($0)
-                        
-                    }
-                }
-                .pickerStyle(.segmented)
-                .background(.secondary)
-                .cornerRadius(10)
-                .padding()
+                NavigationLink {
+                    OneMonthView()
+                        } label: {
+                            Text("1 month")
+                        }
+                        .buttonStyle(.borderedProminent)
                 
-                Text("you selected \(selectedPeriod)")
-                
+                NavigationLink {
+                    OneMonthView()
+                        } label: {
+                            Text("6 month")
+                        }
+                        .buttonStyle(.borderedProminent)
+                NavigationLink {
+                    OneMonthView()
+                        } label: {
+                            Text("12 month")
+                        }
+                        .buttonStyle(.borderedProminent)
             }
+            
             .navigationBarTitle("Goal Setting Period")
+            .padding()
         }
-        
     }
-    
-    
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

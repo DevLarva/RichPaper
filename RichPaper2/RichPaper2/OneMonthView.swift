@@ -9,13 +9,15 @@ import SwiftUI
 
 struct OneMonthView: View {
     @State private var showingAddScreen = true
+    @State var selectedPeriod = ""
+    
     var body: some View {
         List {
              ForEach(0...9, id: \.self) {
                Text("Happy \($0)")
              }
            }
-           .navigationBarTitle("1 month")
+           .navigationBarTitle("One month")
            .toolbar {
                ToolbarItem(placement: .navigationBarTrailing) {
                    Button {
