@@ -12,7 +12,7 @@ struct ContentView: View {
     @AppStorage("_isFirstLaunching") var Firstrun: Bool = true
     
     var body: some View {
-        SelectPeriodView()
+        LoginView(action: {})
             .fullScreenCover(isPresented: $Firstrun) {
                 Onboarding(ShowOnboarding: $Firstrun, showsDismissButton: true)
             }

@@ -10,6 +10,7 @@
 		AC37E07929669936001E9F69 /* OneMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37E07829669936001E9F69 /* OneMonthView.swift */; };
 		AC37E07B2967012D001E9F69 /* SixMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37E07A2967012D001E9F69 /* SixMonthView.swift */; };
 		AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37E07C29670141001E9F69 /* OneYearView.swift */; };
+		AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E9774296DC6A4006E4DA8 /* LoginView.swift */; };
 		AC87A8DF296AA84A007F55D9 /* SelectPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */; };
 		AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */; };
 		ACA524262960140200D76958 /* RichPaper2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524252960140200D76958 /* RichPaper2App.swift */; };
@@ -22,6 +23,7 @@
 		AC37E07829669936001E9F69 /* OneMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMonthView.swift; sourceTree = "<group>"; };
 		AC37E07A2967012D001E9F69 /* SixMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixMonthView.swift; sourceTree = "<group>"; };
 		AC37E07C29670141001E9F69 /* OneYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneYearView.swift; sourceTree = "<group>"; };
+		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		ACA524222960140200D76958 /* RichPaper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPaper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 			children = (
 				ACA524252960140200D76958 /* RichPaper2App.swift */,
 				ACA524272960140200D76958 /* ContentView.swift */,
+				AC7E9774296DC6A4006E4DA8 /* LoginView.swift */,
 				AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */,
 				AC37E07829669936001E9F69 /* OneMonthView.swift */,
 				AC37E07A2967012D001E9F69 /* SixMonthView.swift */,
@@ -158,6 +161,7 @@
 				ACA524282960140200D76958 /* ContentView.swift in Sources */,
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,
+				AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */,
 				AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
