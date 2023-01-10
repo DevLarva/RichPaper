@@ -44,6 +44,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC7E9778296DD390006E4DA8 /* Onboarding & Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */,
+				AC7E9774296DC6A4006E4DA8 /* LoginView.swift */,
+			);
+			path = "Onboarding & Login";
+			sourceTree = "<group>";
+		};
+		AC7E9779296DD3B0006E4DA8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */,
+				AC37E07829669936001E9F69 /* OneMonthView.swift */,
+				AC37E07A2967012D001E9F69 /* SixMonthView.swift */,
+				AC37E07C29670141001E9F69 /* OneYearView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		ACA524192960140200D76958 = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +85,8 @@
 			children = (
 				ACA524252960140200D76958 /* RichPaper2App.swift */,
 				ACA524272960140200D76958 /* ContentView.swift */,
-				AC7E9774296DC6A4006E4DA8 /* LoginView.swift */,
-				AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */,
-				AC37E07829669936001E9F69 /* OneMonthView.swift */,
-				AC37E07A2967012D001E9F69 /* SixMonthView.swift */,
-				AC37E07C29670141001E9F69 /* OneYearView.swift */,
-				AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */,
+				AC7E9778296DD390006E4DA8 /* Onboarding & Login */,
+				AC7E9779296DD3B0006E4DA8 /* Detail */,
 				ACA524292960140300D76958 /* Assets.xcassets */,
 				ACA5242B2960140300D76958 /* Preview Content */,
 			);
