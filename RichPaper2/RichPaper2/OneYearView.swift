@@ -10,12 +10,11 @@ import SwiftUI
 struct OneYearView: View {
     @State private var showingAddScreen = false
     var body: some View {
-        List {
-            ForEach(0...9, id: \.self) {
-                Text("Happy \($0)")
-            }
+        VStack {
+            Text("asdasds")
         }
-        .navigationBarTitle("12 Month")
+            .navigationTitle("One Year")
+            .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {

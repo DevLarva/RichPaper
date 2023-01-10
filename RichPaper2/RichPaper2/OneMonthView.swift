@@ -12,13 +12,12 @@ struct OneMonthView: View {
     
     
     var body: some View {
-        List {
-             ForEach(0...9, id: \.self) {
-               Text("Happy \($0)")
-             }
-           }
-           .navigationBarTitle("One month")
-           .toolbar {
+        VStack {
+            Text("asdasds")
+        }
+            .navigationTitle("One month")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
                ToolbarItem(placement: .navigationBarTrailing) {
                    Button {
                        showingAddScreen.toggle()

@@ -16,7 +16,6 @@
 		ACA524282960140200D76958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524272960140200D76958 /* ContentView.swift */; };
 		ACA5242A2960140300D76958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA524292960140300D76958 /* Assets.xcassets */; };
 		ACA5242D2960140300D76958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA5242C2960140300D76958 /* Preview Assets.xcassets */; };
-		ACA52434296019DF00D76958 /* GoalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA52433296019DF00D76958 /* GoalPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		ACA524272960140200D76958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACA524292960140300D76958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA5242C2960140300D76958 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ACA52433296019DF00D76958 /* GoalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				ACA524252960140200D76958 /* RichPaper2App.swift */,
 				ACA524272960140200D76958 /* ContentView.swift */,
 				AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */,
-				ACA52433296019DF00D76958 /* GoalPage.swift */,
 				AC37E07829669936001E9F69 /* OneMonthView.swift */,
 				AC37E07A2967012D001E9F69 /* SixMonthView.swift */,
 				AC37E07C29670141001E9F69 /* OneYearView.swift */,
@@ -162,7 +159,6 @@
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,
 				AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */,
-				ACA52434296019DF00D76958 /* GoalPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

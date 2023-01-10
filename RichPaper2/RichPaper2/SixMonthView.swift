@@ -10,12 +10,11 @@ import SwiftUI
 struct SixMonthView: View {
     @State private var showingAddScreen = false
     var body: some View {
-        List {
-            ForEach(0...9, id: \.self) {
-                Text("Happy \($0)")
-            }
+        VStack {
+            Text("asdasds")
         }
-        .navigationBarTitle("Six month")
+            .navigationTitle("Six month")
+            .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
