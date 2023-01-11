@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct RichPaper2App: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("signIn") var isSignIn = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !isSignIn {
+                LoginView(action: {})
+            }
+            else {
+                SelectPeriodView()
+            }
         }
     }
 }
