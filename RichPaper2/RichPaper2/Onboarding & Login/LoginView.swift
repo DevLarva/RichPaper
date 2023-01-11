@@ -84,6 +84,7 @@ struct LoginView: View {
                         let config = GIDConfiguration(clientID: clientID)
                         
                         // Start the sign in flow!
+// MARK: - 굉장히 애먹었던 부분...
                         GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController()) { user, error in
                             
                             if let error = error {
@@ -101,7 +102,13 @@ struct LoginView: View {
                             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                                            accessToken: authentication.accessToken)
                             
-                            // ...
+                            Auth.auth().signIn(with: credential){ result , error in
+                                guard error == nil else {
+                                    return
+                                }
+                                print("Sign In")
+                                UserDefaults.standard.set(true, forKey: "signIn")
+                            }
                         }
                         
                     }
