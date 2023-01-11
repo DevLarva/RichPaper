@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import GoogleSignIn
+import Firebase
 
 struct LoginView: View {
     @State var username: String = ""
@@ -74,22 +77,35 @@ struct LoginView: View {
                         .font(.subheadline)
                 
                 // MARK: - 구글 로그인 버튼
-                Button {
-                    action()
-                } label: {
-                    ZStack{
-                        Circle()
-                            .foregroundColor(.white)
-                            .shadow(color: .gray, radius: 4, x: 0, y: 2)
-                        
-                        Image("google")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(8)
-                            .mask(Circle())
+                    GoogleSiginBtn {
+                        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+
+                        // Create Google Sign In configuration object.
+                        let config = GIDConfiguration(clientID: clientID)
+
+                        // Start the sign in flow!
+                        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController())
+                        { user,error in
+
+                          if let error = error {
+                            // ...
+                            return
+                          }
+
+                          guard
+                            let authentication = user?.authentication,
+                            let idToken = authentication.idToken
+                          else {
+                            return
+                          }
+
+                          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                                         accessToken: authentication.accessToken)
+
+                          // ...
+                        }
                     }
-                   
-                } .frame(width: 50, height: 50)
+                    
                 Spacer()
                 }
             
