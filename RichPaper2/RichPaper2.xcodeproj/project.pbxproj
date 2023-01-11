@@ -17,6 +17,7 @@
 		AC4AE36D296F0AB6002C458A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4AE36C296F0AB6002C458A /* GoogleService-Info.plist */; };
 		AC4AE370296F121E002C458A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE36F296F121E002C458A /* GoogleSignIn */; };
 		AC4AE372296F121E002C458A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE371296F121E002C458A /* GoogleSignInSwift */; };
+		AC4AE374296F154D002C458A /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4AE373296F154D002C458A /* FireAuth.swift */; };
 		AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E9774296DC6A4006E4DA8 /* LoginView.swift */; };
 		AC87A8DF296AA84A007F55D9 /* SelectPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */; };
 		AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */; };
@@ -35,6 +36,7 @@
 		AC4AE366296EB405002C458A /* GoogleSiginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSiginBtn.swift; sourceTree = "<group>"; };
 		AC4AE368296EB6D8002C458A /* Additional View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Additional View.swift"; sourceTree = "<group>"; };
 		AC4AE36C296F0AB6002C458A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Helper/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC4AE373296F154D002C458A /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				AC4AE35C296EAF17002C458A /* AppDelegate.swift */,
 				AC4AE368296EB6D8002C458A /* Additional View.swift */,
+				AC4AE373296F154D002C458A /* FireAuth.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				AC4AE369296EB6D8002C458A /* Additional View.swift in Sources */,
 				AC37E07B2967012D001E9F69 /* SixMonthView.swift in Sources */,
 				AC4AE35D296EAF17002C458A /* AppDelegate.swift in Sources */,
+				AC4AE374296F154D002C458A /* FireAuth.swift in Sources */,
 				ACA524282960140200D76958 /* ContentView.swift in Sources */,
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,

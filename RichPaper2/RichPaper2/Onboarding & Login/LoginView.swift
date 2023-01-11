@@ -78,53 +78,26 @@ struct LoginView: View {
                     
                     // MARK: - 구글 로그인 버튼
                     GoogleSiginBtn {
-                        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
                         
-                        // Create Google Sign In configuration object.
-                        let config = GIDConfiguration(clientID: clientID)
-                        
-                        // Start the sign in flow!
-// MARK: - 굉장히 애먹었던 부분...
-                        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController()) { user, error in
+                        FirebAuth.share.signinWithGoogle(presenting: getRootViewController()) { error in
+                            print("ERROR: \(error)")
                             
-                            if let error = error {
-                                // ...
-                                return
-                            }
                             
-                            guard
-                                let authentication = user?.authentication,
-                                let idToken = authentication.idToken
-                            else {
-                                return
-                            }
-                            
-                            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                                           accessToken: authentication.accessToken)
-                            
-                            Auth.auth().signIn(with: credential){ result , error in
-                                guard error == nil else {
-                                    return
-                                }
-                                print("Sign In")
-                                UserDefaults.standard.set(true, forKey: "signIn")
-                            }
                         }
-                        
                     }
+                    
+                    Spacer()
                 }
                 
-                Spacer()
-            }
+            }   .padding()
+            Spacer()
             
-        }   .padding()
-        Spacer()
+        }
+        
         
     }
     
-    
 }
-
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView(action: {})
