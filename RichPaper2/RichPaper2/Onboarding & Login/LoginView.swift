@@ -75,47 +75,47 @@ struct LoginView: View {
                 VStack(spacing: 30) {
                     Text("OR")
                         .font(.subheadline)
-                
-                // MARK: - 구글 로그인 버튼
+                    
+                    // MARK: - 구글 로그인 버튼
                     GoogleSiginBtn {
                         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-
+                        
                         // Create Google Sign In configuration object.
                         let config = GIDConfiguration(clientID: clientID)
-
+                        
                         // Start the sign in flow!
-                        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController())
-                        { user,error in
-
-                          if let error = error {
+                        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController()) { user, error in
+                            
+                            if let error = error {
+                                // ...
+                                return
+                            }
+                            
+                            guard
+                                let authentication = user?.authentication,
+                                let idToken = authentication.idToken
+                            else {
+                                return
+                            }
+                            
+                            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                                           accessToken: authentication.accessToken)
+                            
                             // ...
-                            return
-                          }
-
-                          guard
-                            let authentication = user?.authentication,
-                            let idToken = authentication.idToken
-                          else {
-                            return
-                          }
-
-                          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                                         accessToken: authentication.accessToken)
-
-                          // ...
                         }
+                        
                     }
-                    
-                Spacer()
                 }
-            
-            }   .padding()
+                
                 Spacer()
+            }
             
-        }
-        
+        }   .padding()
+        Spacer()
         
     }
+    
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

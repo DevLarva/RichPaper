@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 @main
 struct RichPaper2App: App {
@@ -22,3 +24,5 @@ struct RichPaper2App: App {
         }
     }
 }
+
+
