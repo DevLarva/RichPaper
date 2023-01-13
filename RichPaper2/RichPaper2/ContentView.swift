@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
+import GoogleSignIn
+import Firebase
 struct ContentView: View {
     @State var showDetails = false
     @AppStorage("_isFirstLaunching") var Firstrun: Bool = true
@@ -15,6 +17,10 @@ struct ContentView: View {
         LoginView(action: {})
             .fullScreenCover(isPresented: $Firstrun) {
                 Onboarding(ShowOnboarding: $Firstrun, showsDismissButton: true)
+                    .onAppear {
+                        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                        }
+                    }
             }
     }
 }

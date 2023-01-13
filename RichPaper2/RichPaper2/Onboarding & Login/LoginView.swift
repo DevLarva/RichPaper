@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseAuth
 import GoogleSignIn
 import Firebase
-
+import GoogleSignInSwift
 struct LoginView: View {
     @State var username: String = ""
     @State var password: String = ""
@@ -36,7 +36,12 @@ struct LoginView: View {
                 
                 
                 VStack(spacing: 30) {
-                  
+                    
+                    Image("icon")
+                        .resizable()
+                        .frame(width: 70, height: 70)
+                    Spacer()
+                        .frame(height: 100)
                     // MARK: - 구글 로그인 버튼
                     GoogleSiginBtn {
                         

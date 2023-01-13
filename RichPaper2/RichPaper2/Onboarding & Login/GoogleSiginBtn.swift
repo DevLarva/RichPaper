@@ -14,22 +14,29 @@ struct GoogleSiginBtn: View {
             Button {
                 action()
             } label: {
-                ZStack{
-                    Circle()
-                        .foregroundColor(.white)
-                        .shadow(color: .gray, radius: 4, x: 0, y: 2)
-                    
-                    Image("google")
-                        .resizable()
-                        .scaledToFit()
-                        .padding(8)
-                        .mask(
-                            Circle()
-                        )
-                }
                 
-            }
-            .frame(width: 50, height: 50)
+                VStack(alignment: .leading) {
+                    HStack(alignment: .center) {
+                        Image("icon-google").renderingMode(.template)
+                            .foregroundColor(.black)
+                          
+                                   Spacer()
+                        Image("google")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            
+                        
+                                   Text("Sign in with Google")
+                            .foregroundColor(.blue).bold()
+                                   Spacer()
+                    }
+                }
+                       }
+                       .padding()
+                       .cornerRadius(16)
+                       .background(Color.white)
+                       .shadow(color: Color.init(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.06), radius: 8, x: 0, y: 4)
+                       .frame(width: 300, height: 58)
         }
     }
 
