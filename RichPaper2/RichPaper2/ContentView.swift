@@ -17,16 +17,12 @@ struct ContentView: View {
         LoginView(action: {})
             .fullScreenCover(isPresented: $Firstrun) {
                 Onboarding(ShowOnboarding: $Firstrun, showsDismissButton: true)
-                    .onAppear {
-                        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-                        }
-                    }
             }
     }
 }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
+}

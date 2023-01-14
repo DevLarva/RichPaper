@@ -31,9 +31,7 @@ struct LoginView: View {
                     .padding(.top)
                 Spacer()
                     .frame(height: 100)
-                
-                
-                
+
                 
                 VStack(spacing: 30) {
                     
@@ -47,8 +45,7 @@ struct LoginView: View {
                         
                         FirebAuth.share.signinWithGoogle(presenting: getRootViewController()) { error in
                             print("ERROR: \(error)")
-                            
-                            
+
                         }
                     }
                     
