@@ -11,10 +11,8 @@ import GoogleSignIn
 import Firebase
 import GoogleSignInSwift
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
-    @State private var showPassword = false
-    var action: () -> Void
+
+        var action: () -> Void
     var body: some View {
         
         ZStack {
@@ -56,10 +54,7 @@ struct LoginView: View {
             Spacer()
             
         }
-        
-        
     }
-    
 }
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
