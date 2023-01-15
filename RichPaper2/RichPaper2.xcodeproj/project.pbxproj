@@ -40,6 +40,7 @@
 		AC4AE368296EB6D8002C458A /* Additional View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Additional View.swift"; sourceTree = "<group>"; };
 		AC4AE36C296F0AB6002C458A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Helper/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC4AE373296F154D002C458A /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
+		AC5474C529742401005DB650 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				AC4AE35C296EAF17002C458A /* AppDelegate.swift */,
+				AC5474C529742401005DB650 /* Config.xcconfig */,
 				AC4AE368296EB6D8002C458A /* Additional View.swift */,
 				AC4AE373296F154D002C458A /* FireAuth.swift */,
 			);

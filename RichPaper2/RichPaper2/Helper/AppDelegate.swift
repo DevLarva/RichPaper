@@ -8,11 +8,14 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import KakaoSDKCommon
+import KakaoSDKAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         // Initializetion code for firebase
         FirebaseApp.configure()
+        KakaoSDK.initSDK(appKey: "NATIVE_APP_KEY")
         return true
     }
     
@@ -21,5 +24,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                      options: [UIApplication.OpenURLOptionsKey: Any])
     -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
+        
+        if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                       return AuthController.handleOpenUrl(url: url, options: options)
+                   }
+                   return false
     }
 }

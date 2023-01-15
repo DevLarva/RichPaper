@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  RichPaper2
+//
+//  Created by 백대홍 on 2023/01/15.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 28144e9a7684d7cee0a911f0b6b51354

@@ -10,6 +10,10 @@ import FirebaseAuth
 import GoogleSignIn
 import Firebase
 import GoogleSignInSwift
+import KakaoSDKAuth
+import KakaoSDKUser
+import KakaoSDKAuth
+import KakaoSDKUser
 struct LoginView: View {
 
         var action: () -> Void
@@ -46,6 +50,30 @@ struct LoginView: View {
 
                         }
                     }
+                    Button(action : {
+                               //카카오톡이 깔려있는지 확인하는 함수
+                               if (AuthApi.isKakaoTalkLoginAvailable()) {
+                                   //카카오톡이 설치되어있다면 카카오톡을 통한 로그인 진행
+                                   AuthApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                                       print(oauthToken?.accessToken)
+                                       print(error)
+                                   }
+                               }else{
+                                   //카카오톡이 설치되어있지 않다면 사파리를 통한 로그인 진행
+                                   AuthApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+                                       print(oauthToken?.accessToken)
+                                       print(error)
+                                   }
+                               }
+                           }){
+                               
+                               Text("카카오 로그인")
+                           }
+                           .onOpenURL(perform: { url in
+                                       if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                                           _ = AuthController.handleOpenUrl(url: url)
+                                       }
+                                   })
                     
                     Spacer()
                 }

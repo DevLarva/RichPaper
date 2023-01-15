@@ -8,10 +8,13 @@
 import SwiftUI
 import Firebase
 import GoogleSignIn
+import KakaoSDKCommon
+import KakaoSDKAuth
 
 @main
 struct RichPaper2App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @AppStorage("signIn") var isSignIn = false
     var body: some Scene {
         WindowGroup {
@@ -21,6 +24,11 @@ struct RichPaper2App: App {
             else {
                 SelectPeriodView()
             }
+            ContentView().onOpenURL(perform: { url in
+                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                    AuthController.handleOpenUrl(url: url)
+                }
+            })
         }
     }
 }
