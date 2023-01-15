@@ -13,9 +13,14 @@ import KakaoSDKAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Initializetion code for firebase
+        // Initializetixon code for firebase
         FirebaseApp.configure()
-        KakaoSDK.initSDK(appKey: "NATIVE_APP_KEY")
+        let kakakoAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
+        // Kakao SDK 초기화
+        KakaoSDK.initSDK(appKey: kakakoAppKey as! String)
+        
+        print("kakakoAppKey : \(kakakoAppKey)")
+        
         return true
     }
     
@@ -29,5 +34,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                        return AuthController.handleOpenUrl(url: url, options: options)
                    }
                    return false
+    }
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        let sceneConfiguration = UISceneConfiguration(name: nil,
+                                                      sessionRole: connectingSceneSession.role)
+        sceneConfiguration.delegateClass = SceneDelegate.self
+        return sceneConfiguration
     }
 }
