@@ -30,7 +30,7 @@ struct RichPaper2App: App {
             else {
                 SelectPeriodView()
             }
-            LoginView(action: {}).onOpenURL(perform: { url in
+            LoginView(action: {} ).onOpenURL(perform: { url in
                 if (AuthApi.isKakaoTalkLoginUrl(url)) {
                     _ = AuthController.handleOpenUrl(url: url)
                 }
