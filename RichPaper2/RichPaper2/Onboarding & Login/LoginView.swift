@@ -17,7 +17,8 @@ import KakaoSDKUser
 
 struct LoginView: View {
 
-        var action: () -> Void
+    @StateObject var kakaoAuthVM : KakaoAuthVM = KakaoAuthVM()
+    var action: () -> Void
     var body: some View {
         
         ZStack {
@@ -36,7 +37,7 @@ struct LoginView: View {
                     .frame(height: 100)
 
                 
-                VStack(spacing: 30) {
+                VStack(spacing: 20) {
                     
                     Image("icon")
                         .resizable()
@@ -50,11 +51,14 @@ struct LoginView: View {
                             print("ERROR: \(error)")
 
                         }
+                        
                     }
-                    Button("카카오로그인", action:  {})
-                    Button("카카오 로그아웃", action: {})
-                    
-                    Spacer()
+                    Button("카카오로그인", action:  {
+                        kakaoAuthVM.handlekakaoLogin()
+                    })
+                    Button("카카오 로그아웃", action: {
+                        kakaoAuthVM.handlekakaoLogout()
+                    })
                 }
                 
             }   .padding()

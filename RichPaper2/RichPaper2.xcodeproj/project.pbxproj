@@ -25,6 +25,7 @@
 		AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E9774296DC6A4006E4DA8 /* LoginView.swift */; };
 		AC87A8DF296AA84A007F55D9 /* SelectPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */; };
 		AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */; };
+		AC8E2D6E29752A3100ED8839 /* KakaoAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */; };
 		ACA524262960140200D76958 /* RichPaper2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524252960140200D76958 /* RichPaper2App.swift */; };
 		ACA524282960140200D76958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524272960140200D76958 /* ContentView.swift */; };
 		ACA5242A2960140300D76958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA524292960140300D76958 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthVM.swift; sourceTree = "<group>"; };
 		ACA524222960140200D76958 /* RichPaper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPaper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA524252960140200D76958 /* RichPaper2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichPaper2App.swift; sourceTree = "<group>"; };
 		ACA524272960140200D76958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				AC4AE368296EB6D8002C458A /* Additional View.swift */,
 				AC4AE373296F154D002C458A /* FireAuth.swift */,
 				AC5474C629742709005DB650 /* SceneDelegate.swift */,
+				AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,
 				AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */,
 				AC4AE367296EB405002C458A /* GoogleSiginBtn.swift in Sources */,
+				AC8E2D6E29752A3100ED8839 /* KakaoAuthVM.swift in Sources */,
 				AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
