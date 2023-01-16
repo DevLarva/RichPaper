@@ -11,6 +11,8 @@ import KakaoSDKUser
 
 class KakaoAuthVM : ObservableObject {
     
+    
+    
     func handlekakaoLogout() {
         UserApi.shared.logout {(error) in
             if let error = error {
@@ -21,6 +23,7 @@ class KakaoAuthVM : ObservableObject {
             }
         }
     }
+       
     
     
     func handlekakaoLogin() {

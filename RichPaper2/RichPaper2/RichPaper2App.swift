@@ -16,27 +16,27 @@ struct RichPaper2App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     init() {
         let kakakoAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
-          // Kakao SDK 초기화
-          KakaoSDK.initSDK(appKey: kakakoAppKey as! String )
-      }
+        // Kakao SDK 초기화
+        KakaoSDK.initSDK(appKey: kakakoAppKey as! String )
+    }
     
     
     @AppStorage("signIn") var isSignIn = false
     var body: some Scene {
         WindowGroup {
+            LoginView(action: {} ).onOpenURL(perform: { url in
+                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                    _ = AuthController.handleOpenUrl(url: url)
+                }
+            })
             if !isSignIn {
                 LoginView(action: {})
             }
             else {
                 SelectPeriodView()
             }
-            LoginView(action: {} ).onOpenURL(perform: { url in
-                if (AuthApi.isKakaoTalkLoginUrl(url)) {
-                    _ = AuthController.handleOpenUrl(url: url)
-                }
-            })
         }
     }
+    
+    
 }
-
-

@@ -53,16 +53,11 @@ struct LoginView: View {
                         }
                         
                     }
-                    Button("카카오로그인", action:  {
-                        kakaoAuthVM.handlekakaoLogin()
-                    })
-                    Button("카카오 로그아웃", action: {
-                        kakaoAuthVM.handlekakaoLogout()
-                    })
+                   kakaoSigninBtn()
                 }
                 
             }   .padding()
-            Spacer()
+            
             
         }
     }
