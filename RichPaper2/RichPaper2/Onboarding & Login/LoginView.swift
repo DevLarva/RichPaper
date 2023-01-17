@@ -10,14 +10,11 @@ import FirebaseAuth
 import GoogleSignIn
 import Firebase
 import GoogleSignInSwift
-import KakaoSDKAuth
-import KakaoSDKUser
-import KakaoSDKAuth
-import KakaoSDKUser
+
 
 struct LoginView: View {
 
-    @StateObject var kakaoAuthVM : KakaoAuthVM = KakaoAuthVM()
+    
     var action: () -> Void
     var body: some View {
         
@@ -53,7 +50,6 @@ struct LoginView: View {
                         }
                         
                     }
-                   kakaoSigninBtn()
                 }
                 
             }   .padding()

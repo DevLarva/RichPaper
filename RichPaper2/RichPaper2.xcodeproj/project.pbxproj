@@ -18,15 +18,9 @@
 		AC4AE370296F121E002C458A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE36F296F121E002C458A /* GoogleSignIn */; };
 		AC4AE372296F121E002C458A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE371296F121E002C458A /* GoogleSignInSwift */; };
 		AC4AE374296F154D002C458A /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4AE373296F154D002C458A /* FireAuth.swift */; };
-		AC5474C729742709005DB650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5474C629742709005DB650 /* SceneDelegate.swift */; };
-		AC5CE9062972F0EF0021F0F6 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AC5CE9052972F0EF0021F0F6 /* KakaoSDKAuth */; };
-		AC5CE9082972F0EF0021F0F6 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = AC5CE9072972F0EF0021F0F6 /* KakaoSDKCommon */; };
-		AC5CE90A2972F0EF0021F0F6 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = AC5CE9092972F0EF0021F0F6 /* KakaoSDKUser */; };
 		AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E9774296DC6A4006E4DA8 /* LoginView.swift */; };
 		AC87A8DF296AA84A007F55D9 /* SelectPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */; };
 		AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */; };
-		AC8E2D6E29752A3100ED8839 /* KakaoAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */; };
-		AC8E2D7229752F4A00ED8839 /* kakaoSigninBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E2D7129752F4A00ED8839 /* kakaoSigninBtn.swift */; };
 		ACA524262960140200D76958 /* RichPaper2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524252960140200D76958 /* RichPaper2App.swift */; };
 		ACA524282960140200D76958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA524272960140200D76958 /* ContentView.swift */; };
 		ACA5242A2960140300D76958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA524292960140300D76958 /* Assets.xcassets */; };
@@ -44,12 +38,9 @@
 		AC4AE36C296F0AB6002C458A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Helper/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC4AE373296F154D002C458A /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		AC5474C529742401005DB650 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		AC5474C629742709005DB650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthVM.swift; sourceTree = "<group>"; };
-		AC8E2D7129752F4A00ED8839 /* kakaoSigninBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoSigninBtn.swift; sourceTree = "<group>"; };
 		ACA524222960140200D76958 /* RichPaper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPaper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA524252960140200D76958 /* RichPaper2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichPaper2App.swift; sourceTree = "<group>"; };
 		ACA524272960140200D76958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,10 +55,7 @@
 			files = (
 				AC4AE372296F121E002C458A /* GoogleSignInSwift in Frameworks */,
 				AC4AE35A296EAEDA002C458A /* FirebaseAuth in Frameworks */,
-				AC5CE90A2972F0EF0021F0F6 /* KakaoSDKUser in Frameworks */,
 				AC4AE370296F121E002C458A /* GoogleSignIn in Frameworks */,
-				AC5CE9082972F0EF0021F0F6 /* KakaoSDKCommon in Frameworks */,
-				AC5CE9062972F0EF0021F0F6 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +69,6 @@
 				AC5474C529742401005DB650 /* Config.xcconfig */,
 				AC4AE368296EB6D8002C458A /* Additional View.swift */,
 				AC4AE373296F154D002C458A /* FireAuth.swift */,
-				AC5474C629742709005DB650 /* SceneDelegate.swift */,
-				AC8E2D6D29752A3100ED8839 /* KakaoAuthVM.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -93,7 +79,6 @@
 				AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */,
 				AC7E9774296DC6A4006E4DA8 /* LoginView.swift */,
 				AC4AE366296EB405002C458A /* GoogleSiginBtn.swift */,
-				AC8E2D7129752F4A00ED8839 /* kakaoSigninBtn.swift */,
 			);
 			path = "Onboarding & Login";
 			sourceTree = "<group>";
@@ -169,9 +154,6 @@
 				AC4AE359296EAEDA002C458A /* FirebaseAuth */,
 				AC4AE36F296F121E002C458A /* GoogleSignIn */,
 				AC4AE371296F121E002C458A /* GoogleSignInSwift */,
-				AC5CE9052972F0EF0021F0F6 /* KakaoSDKAuth */,
-				AC5CE9072972F0EF0021F0F6 /* KakaoSDKCommon */,
-				AC5CE9092972F0EF0021F0F6 /* KakaoSDKUser */,
 			);
 			productName = RichPaper2;
 			productReference = ACA524222960140200D76958 /* RichPaper2.app */;
@@ -204,7 +186,6 @@
 			packageReferences = (
 				AC4AE358296EAEDA002C458A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				AC4AE36E296F121E002C458A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				AC5CE9042972F0EF0021F0F6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = ACA524232960140200D76958 /* Products */;
 			projectDirPath = "";
@@ -241,12 +222,9 @@
 				AC4AE374296F154D002C458A /* FireAuth.swift in Sources */,
 				ACA524282960140200D76958 /* ContentView.swift in Sources */,
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
-				AC5474C729742709005DB650 /* SceneDelegate.swift in Sources */,
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,
-				AC8E2D7229752F4A00ED8839 /* kakaoSigninBtn.swift in Sources */,
 				AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */,
 				AC4AE367296EB405002C458A /* GoogleSiginBtn.swift in Sources */,
-				AC8E2D6E29752A3100ED8839 /* KakaoAuthVM.swift in Sources */,
 				AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,14 +450,6 @@
 				version = 6.2.3;
 			};
 		};
-		AC5CE9042972F0EF0021F0F6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -497,21 +467,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC4AE36E296F121E002C458A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
-		};
-		AC5CE9052972F0EF0021F0F6 /* KakaoSDKAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC5CE9042972F0EF0021F0F6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKAuth;
-		};
-		AC5CE9072972F0EF0021F0F6 /* KakaoSDKCommon */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC5CE9042972F0EF0021F0F6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKCommon;
-		};
-		AC5CE9092972F0EF0021F0F6 /* KakaoSDKUser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC5CE9042972F0EF0021F0F6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKUser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
