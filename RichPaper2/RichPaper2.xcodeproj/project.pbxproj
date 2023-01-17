@@ -18,6 +18,7 @@
 		AC4AE370296F121E002C458A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE36F296F121E002C458A /* GoogleSignIn */; };
 		AC4AE372296F121E002C458A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC4AE371296F121E002C458A /* GoogleSignInSwift */; };
 		AC4AE374296F154D002C458A /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4AE373296F154D002C458A /* FireAuth.swift */; };
+		AC6D65DB297698E400C60A16 /* TextOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D65DA297698E400C60A16 /* TextOneView.swift */; };
 		AC7E9775296DC6A4006E4DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E9774296DC6A4006E4DA8 /* LoginView.swift */; };
 		AC87A8DF296AA84A007F55D9 /* SelectPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */; };
 		AC87A8E1296AA8CE007F55D9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */; };
@@ -38,6 +39,7 @@
 		AC4AE36C296F0AB6002C458A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Helper/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC4AE373296F154D002C458A /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		AC5474C529742401005DB650 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		AC6D65DA297698E400C60A16 /* TextOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOneView.swift; sourceTree = "<group>"; };
 		AC7E9774296DC6A4006E4DA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC87A8DE296AA84A007F55D9 /* SelectPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPeriodView.swift; sourceTree = "<group>"; };
 		AC87A8E0296AA8CE007F55D9 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				AC37E07829669936001E9F69 /* OneMonthView.swift */,
 				AC37E07A2967012D001E9F69 /* SixMonthView.swift */,
 				AC37E07C29670141001E9F69 /* OneYearView.swift */,
+				AC6D65DA297698E400C60A16 /* TextOneView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				AC37E07B2967012D001E9F69 /* SixMonthView.swift in Sources */,
 				AC4AE35D296EAF17002C458A /* AppDelegate.swift in Sources */,
 				AC4AE374296F154D002C458A /* FireAuth.swift in Sources */,
+				AC6D65DB297698E400C60A16 /* TextOneView.swift in Sources */,
 				ACA524282960140200D76958 /* ContentView.swift in Sources */,
 				ACA524262960140200D76958 /* RichPaper2App.swift in Sources */,
 				AC37E07D29670141001E9F69 /* OneYearView.swift in Sources */,

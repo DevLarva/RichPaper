@@ -26,7 +26,7 @@ struct OneMonthView: View {
                        Label("Add Word", systemImage: "plus")
                    }.sheet(isPresented: self.$showingAddScreen)
                    {
-                       OneMonthView()
+                       TextOneView()
                    }
                }
            }
